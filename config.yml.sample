@@ -1,0 +1,25 @@
+################################################################
+# Setup config file placed as ~/.mhc/config.yml
+#
+# Google Calenar URL for CalDAV is in the form of:
+#   https://www.google.com/calendar/dav/{calendar_id}/events
+#
+# calendar_id:
+#  for primary calendar is just your email address.
+#  for others will be in the form of:
+#    [long-string-of-characters]@group.calendar.google.com
+#
+# You can get them by clicking the down arrow next to your
+# calendar at calendar.google.com and selecting 'Calendar Settings'.
+# Be sure to use HTTPS in your URL, as an http address will not work.
+#
+# for more details about google caelndar settings:
+#   http://www.google.com/support/calendar/bin/answer.py?answer=99358
+#   and click Sunbird section.
+#
+CALDAV:
+  google_primary: &google
+    USER: "****@gmail.com"
+    PASSWORD: "********"
+    URL: "https://www.google.com/calendar/dav/****@gmail.com/events/"
+  default: *google
