@@ -41,7 +41,7 @@ module Mhc
         if @alarm
           seconds = @alarm
           duration = "-P"
-          duration += "#{seconds /= 84600}D" if seconds >= 84600
+          duration += "#{seconds /= 86400}D" if seconds >= 86400
           duration += "T#{seconds /= 3600}H" if seconds >= 3600
           duration += "T#{seconds /= 60}M"   if seconds >= 60
         end
